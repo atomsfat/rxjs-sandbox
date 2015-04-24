@@ -1,3 +1,32 @@
-html
-  body
-    h1 hi this a test yeah
+html(lang='es')
+  head
+    link(media='all', rel="stylesheet", href='/assets/vendor/semantic-ui/dist/semantic.css')
+    script(src='/assets/vendor/jquery/dist/jquery.js')  
+    script(src='/assets/vendor/ractive/ractive.js')  
+    script(src='/assets/vendor/rxjs/dist/rx.all.js')  
+    script(src='/assets/js/index.js')  
+  body.ui.page.grid
+    .container  
+      .ui.three.column.grid
+        .column
+          .ui.cards        
+            .card
+              .content
+                .header Juan  
+                .meta A
+                .description Ante    
+        .column
+          .ui.cards
+            .card
+              .content
+                .header Paco
+                .meta Cabe
+                .description Con
+        .column
+          .ui.cards
+            .card
+              .content
+                .header 
+                  a.refresh Pedro
+                .meta Contra
+                .description De  
